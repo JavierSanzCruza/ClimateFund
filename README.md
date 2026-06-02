@@ -22,18 +22,25 @@ Along with the data, we also provide code for running question-answering experim
 - Craig Macdonald, University of Glasgow (craig.macdonald@glasgow.ac.uk)
 - Iadh Ounis, University of Glasgow (iadh.ounis@glasgow.ac.uk)
 
+## Repository structure
+This repository has the following structure:
+
+1. `dataset` contains both the ClimateFund dataset, and its ClimateFund-QA extension.
+2. `code` contains the necessary code to run QA experiments on ClimateFund-QA.
+
 
 ## Dataset documentation
 
 For more information on the dataset and structure, we provide two options:
 
-1. Look at the corresponding dataset README file <a src="dataset/README.md">here</a>
+1. Look at the corresponding dataset README file [here](https://github.com/JavierSanzCruza/ClimateFund/tree/main/dataset)
 2. Look at the Huggingface data repository:
+
 [![Visualize this dataset](https://huggingface.co/datasets/huggingface/badges/resolve/main/visualize-this-dataset-sm.svg)](https://huggingface.co/datasets/JavierSanzCruza/ClimateFund)
 
 ## Code documentation
 
-Code documentation for running experiments can be found <a src="code/README.md">here</a> 
+Code documentation for running experiments can be found [here](https://github.com/JavierSanzCruza/ClimateFund/tree/main/code)
 
 ## Citation
 
