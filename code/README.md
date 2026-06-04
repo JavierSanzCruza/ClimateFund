@@ -83,7 +83,7 @@ In Colab, open:
 
 ```text
 Secrets → Add new secret
-
+```
 
 ## Current benchmark
 
