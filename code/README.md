@@ -73,7 +73,7 @@ This repository contains a Google Colab notebook for running the ClimateFund que
 
 Open the notebook in Google Colab:
 
-[Open in Colab](https://colab.research.google.com/github/JavierSanzCruza/ClimateFund/blob/main/climatefund_qa_experiment_google_colab.ipynb)
+[Open in Colab](https://colab.research.google.com/)
 
 ## Setup
 
