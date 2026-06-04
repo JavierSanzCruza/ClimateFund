@@ -19,7 +19,7 @@ The code is organized as follows:
 ## Running the experiments
 
 
-## Install
+### Install
 
 ```bash
 pip install -r requirements.txt
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 For a quick smoke test without API keys, use `extractive_fallback` as the reader.
 
-## Command-line flow
+### Command-line flow
 
 ```bash
 python -m climatefund_qa.cli status
@@ -45,7 +45,7 @@ For Windows, if you are not inside `UOG/code`, pass the root explicitly:
 python -m climatefund_qa.cli --project-root C:\Users\mirun\Desktop\UOG status
 ```
 
-## Jupyter usage
+### Jupyter usage
 
 Open `notebooks/run_modular_notebook_flow.ipynb`.
 
