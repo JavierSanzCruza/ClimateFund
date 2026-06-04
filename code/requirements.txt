@@ -1,0 +1,16 @@
+pandas
+numpy
+tqdm
+pypdf
+sentence-transformers
+faiss-cpu
+openai
+bert-score
+transformers
+accelerate
+bitsandbytes
+sentencepiece
+python-terrier
+pyterrier-dr
+pyterrier-t5
+pyterrier-rag
