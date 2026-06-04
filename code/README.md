@@ -18,7 +18,72 @@ The code is organized as follows:
 
 ## Running the experiments
 
-We describe here how to run the code. TODO
+
+## Install
+
+```bash
+pip install -r requirements.txt
+```
+
+For a quick smoke test without API keys, use `extractive_fallback` as the reader.
+
+## Command-line flow
+
+```bash
+python -m climatefund_qa.cli status
+python -m climatefund_qa.cli prepare
+python -m climatefund_qa.cli indexes --retrievers bm25 --rebuild
+python -m climatefund_qa.cli retrieve --question "What is the project objective?" --retriever bm25 --reranker none
+python -m climatefund_qa.cli run --retrievers bm25 --rerankers none --readers extractive_fallback --max-questions 3 --no-bertscore
+python -m climatefund_qa.cli table
+python -m climatefund_qa.cli qualitative --top-k 5
+```
+
+For Windows, if you are not inside `UOG/code`, pass the root explicitly:
+
+```bat
+python -m climatefund_qa.cli --project-root C:\Users\mirun\Desktop\UOG status
+```
+
+## Jupyter usage
+
+Open `notebooks/run_modular_notebook_flow.ipynb`.
+
+The notebook calls the same functions used by the command line:
+
+- `step_prepare_tables`
+- `step_build_indexes`
+- `step_load_indexes`
+- `step_retrieve`
+- `step_read_answer`
+- `step_run_experiment`
+
+## Credentials
+
+Copy `credentials.env.example` to `credentials.env` and add keys there. The code loads it automatically.
+
+Do not commit `credentials.env` to GitHub.
+
+## Google Colab notebook option
+
+
+This repository contains a Google Colab notebook for running the ClimateFund question-answering experiment using multiple LLMs.
+
+## Notebook
+
+Open the notebook in Google Colab:
+
+[Open in Colab](https://colab.research.google.com/github/JavierSanzCruza/ClimateFund/blob/main/climatefund_qa_experiment_google_colab.ipynb)
+
+## Setup
+
+Before running the notebook, add your API keys in Google Colab Secrets.
+
+In Colab, open:
+
+```text
+Secrets → Add new secret
+
 
 ## Current benchmark
 
