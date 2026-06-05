@@ -42,8 +42,9 @@ This data repository is organized as follows:
 
 - **documents/:** Collection of the Green Climate Fund (GCF) funding proposals annotated in the dataset.
   - **documents/FPXXX.pdf:** Each of the documents, defined by its GCF project identifier (FP+Number).
-- **climatefund.json:** JSON file containing the annotations of projects. Format is described below in ...
-- **climatefund_qa.csv:** CSV file containing 500 question-answer pairs (ClimateFund-QA). Format is described below in ...
+- **climatefund.json:** JSON file containing the annotations of projects. Format is described below in [ClimateFund annotations](#annotations)
+- **climatefund_qa.csv:** CSV file containing 500 question-answer pairs (ClimateFund-QA). Format is described below in [ClimateFund-QA](#questions)
+- **climatefund_qa.json:** JSON version of the ClimateFund-QA dataset.
 - **LICENSE:** A copy of the MPL-2.0 License.
 
 ## ClimateFund annotations <a name="annotations"></a>
