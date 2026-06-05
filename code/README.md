@@ -24,7 +24,7 @@ code/
 │   ├── metrics.py                          # Exact match, token F1, BERTScore, answer-quality flags
 │   ├── pipeline.py                         # Thin wrapper functions used by the CLI and notebook
 │   ├── qualitative.py                      # Selects and saves example outputs for manual inspection
-│   ├── readers.py                          # Extractive fallback, OpenAI-compatible, IDA, and Hugging Face readers
+│   ├── readers.py                          # Extractive fallback, OpenAI-compatible, LLMHOST, and Hugging Face readers
 │   ├── rerankers.py                        # No reranker and MonoT5 reranker
 │   ├── results_table.py                    # Builds final results tables and LaTeX tables
 │   ├── retrieval.py                        # Runs retrieval and attaches passage text/evidence
@@ -358,13 +358,13 @@ python -m climatefund_qa.cli --project-root . run \
   --max-questions 10
 ```
 
-Run with an IDA-hosted reader:
+Run with an LLMHOST-hosted reader:
 
 ```bash
 python -m climatefund_qa.cli --project-root . run \
   --retrievers bm25 \
   --rerankers none \
-  --readers ida_qwen_2_5_72b \
+  --readers LLMHOST_qwen_2_5_72b \
   --max-questions 10
 ```
 
@@ -454,9 +454,9 @@ Common experiment options:
 | `openai_gpt_4o_mini` | `OPENAI_API_KEY` | OpenAI-compatible reader using GPT-4o mini. |
 | `openai_gpt_4_1_mini` | `OPENAI_API_KEY` | OpenAI-compatible reader using GPT-4.1 mini. |
 | `gpt-5.4-mini-2026-03-17` | `OPENAI_API_KEY` | OpenAI-compatible reader using the configured model name. |
-| `ida_qwen_2_5_72b` | `IDA_LLM_API_KEY` | IDA-hosted Qwen 2.5 72B reader. |
-| `ida_qwen_2_5_7b` | `IDA_LLM_API_KEY` | IDA-hosted Qwen 2.5 7B reader. |
-| `llama-3.3-70b-instruct` | `IDA_LLM_API_KEY` | IDA-hosted Llama 3.3 70B reader. |
+| `LLMHOST_qwen_2_5_72b` | `LLMHOST_LLM_API_KEY` | LLMHOST-hosted Qwen 2.5 72B reader. |
+| `LLMHOST_qwen_2_5_7b` | `LLMHOST_LLM_API_KEY` | LLMHOST-hosted Qwen 2.5 7B reader. |
+| `llama-3.3-70b-instruct` | `LLMHOST_LLM_API_KEY` | LLMHOST-hosted Llama 3.3 70B reader. |
 | `hf_mistral_7b_instruct_v03` | `HF_TOKEN` | Hugging Face Mistral 7B Instruct reader. |
 
 ---
