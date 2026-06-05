@@ -42,7 +42,7 @@ python -m climatefund_qa.cli qualitative --top-k 5
 For Windows, if you are not inside `UOG/code`, pass the root explicitly:
 
 ```bat
-python -m climatefund_qa.cli --project-root C:\Users\mirun\Desktop\UOG status
+python -m climatefund_qa.cli --project-root C:\Users\mirun\Desktop\your_folder status
 ```
 
 ### Jupyter usage
